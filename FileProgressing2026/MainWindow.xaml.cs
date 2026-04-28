@@ -1,5 +1,7 @@
 ﻿using MaterialDesignThemes.Wpf;
+using Microsoft.Win32;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows;
 using System.Windows.Automation;
@@ -42,7 +44,7 @@ namespace FileProgressing2026
             //print("hello,C#!")
             void print(string text) { Console.WriteLine(text); }
             print("What??Haha.In fact I set this method to public,so you have a small chance to see this,you are a good programmer bro👍");
-            
+
         }
 
 
@@ -81,7 +83,7 @@ namespace FileProgressing2026
             else
             {
                 button.Background = Bg.Background;
- 
+
                 (button.Tag as List<string>)[1] = "0";
                 foreach (Border element in SelectedDocumentShower.Children)
                 {
@@ -194,7 +196,7 @@ namespace FileProgressing2026
                     (sender as Button).Tag = "0";
                 }
             }
-            
+
         }
 
         private void Rename_Click(object sender, RoutedEventArgs e)
@@ -209,5 +211,33 @@ namespace FileProgressing2026
             modifyExtension.Show();
         }
 
+        private void Concat_Click(object sender, RoutedEventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new() { FileName=$"FileProgressing{DateTime.Now.ToString("yyyy-MM-dd-hh-mm-ss")}合并文本.txt",DefaultExt="txt",Filter="文本文件(*.txt) | *.txt"};
+            string savePath = "";
+            if (saveFileDialog.ShowDialog() == true)
+            {
+                savePath = saveFileDialog.FileName;
+            }
+
+            string contents = "";
+            foreach (Border border in SelectedDocumentShower.Children)
+            {
+
+                var tag = border.Tag as List<string>;
+                var path = tag[1];
+                if (System.IO.Path.GetExtension(path) != ".txt") { return; }
+                var content = File.ReadAllText(path);
+                contents += content;
+            }
+            File.WriteAllText(savePath, contents);
+            MessageBox.Show("操作成功", "提示");
+        }
+
+        private void Orangnize_Click(object sender, RoutedEventArgs e)
+        {
+            Orangnize orangnize = new();
+            orangnize.Show();
+        }
     }
 }

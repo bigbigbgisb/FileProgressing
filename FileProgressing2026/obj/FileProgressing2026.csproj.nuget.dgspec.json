@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing2026\\FileProgressing2026.csproj": {}
+    "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\FileProgressing2026.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing2026\\FileProgressing2026.csproj": {
+    "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\FileProgressing2026.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing2026\\FileProgressing2026.csproj",
+        "projectUniqueName": "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\FileProgressing2026.csproj",
         "projectName": "FileProgressing2026",
-        "projectPath": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing2026\\FileProgressing2026.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing2026\\obj\\",
+        "projectPath": "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\FileProgressing2026.csproj",
+        "packagesPath": "C:\\Users\\ycfx\\.nuget\\packages\\",
+        "outputPath": "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ycfx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

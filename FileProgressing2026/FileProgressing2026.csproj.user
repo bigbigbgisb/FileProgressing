@@ -8,6 +8,9 @@
     <Compile Update="ModifyExtension.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Orangnize.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="RenameSettings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

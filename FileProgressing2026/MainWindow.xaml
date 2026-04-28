@@ -48,9 +48,13 @@
         </Border>
         <Border x:Name="Bg" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#434343"  >
             <StackPanel Margin="0,10,0,10">
-                <TextBlock Text="通用" Foreground="White" FontSize="8" HorizontalAlignment="Left" Margin="5,0,0,0"></TextBlock>
+                <TextBlock Text="通用" Foreground="White" FontSize="8" HorizontalAlignment="Center"></TextBlock>
                 <Button x:Name="Rename" Content="📝" Foreground="White" FontSize="15" Padding="0,0,0,0" FontFamily="Segoe UI Emoji" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="一键重命名已选择的文件(模板详见请点击)" Margin="0,10,0,0" Click="Rename_Click"></Button>
                 <Button x:Name="ModifyExtension" Content="🏷" Foreground="White" FontSize="15" Padding="0,0,0,0" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="一键修改已选择的文件后缀(模板详见请点击)" Click="ModifyExtension_Click" Margin="0,10,0,0"></Button>
+                <Button x:Name="Orangnize" Content="🧹 " Foreground="White" FontSize="15" Padding="5,0,0,0" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="整理文件,自动/自定义分类为文件夹" Click="Orangnize_Click" Margin="0,10,0,0"></Button>
+                <TextBlock Text="文本文件" Foreground="White" FontSize="8" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
+                <Button x:Name="Concat" Content="🔗" Foreground="White" FontSize="15" Padding="0,0,0,0" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="一键合并.txt文件(按照导入顺序)" Click="Concat_Click" Margin="0,10,0,0"></Button>
+                
             </StackPanel>
         </Border>
         <Border Grid.Column="2" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#434343">
