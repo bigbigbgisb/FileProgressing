@@ -19,6 +19,7 @@ namespace FileProgressing2026
     public partial class ModifyExtension : Window
     {
         private string selectedExtension;
+
         public ModifyExtension()
         {
             InitializeComponent();
@@ -28,67 +29,38 @@ namespace FileProgressing2026
 
         private void Confirm_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
             if (selectedExtension == null)
             {
                 MessageBox.Show("请先选择要转换为的文件后缀", "警告");
                 return;
             }
+            if (mainWindow.selectedFiles == null || mainWindow.selectedFiles.Count == 0)
+            {
+                MessageBox.Show("请先添加文件至待处理区，请检查?", "警告");
+                return;
+            }
             else
             {
-                MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
+                
                 if (mainWindow.SelectedDocumentShower.Children == null) { return; }
                 foreach (Border border in mainWindow.SelectedDocumentShower.Children)
                 {
                     List<string> tag = border.Tag as List<string>;
                     string oldPath = tag[1];
                     string dir = System.IO.Path.GetDirectoryName(oldPath);
-                    string newPath = System.IO.Path.Combine(dir, $"{System.IO.Path.GetFileNameWithoutExtension(oldPath)}{selectedExtension}");
+                    string newPath = System.IO.Path.Combine(dir, $"{System.IO.Path.GetFileNameWithoutExtension(oldPath)}.{selectedExtension}");
                     File.Move(oldPath, newPath);
                 }
-                MessageBox.Show("操作成功!","提示");
+                MessageBox.Show("操作成功!", "提示");
                 Close();
             }
         }
-
-        private void Md_Click(object sender, RoutedEventArgs e)
+        private void Extenstion_Click(object sender, RoutedEventArgs e)
         {
-            selectedExtension = ".md";
+            string extensionName = (sender as Button).Name.ToLower();
+            selectedExtension = extensionName;
         }
 
-        private void Txt_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".txt";
-        }
-
-        private void Cs_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".cs";
-        }
-
-        private void Py_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".py";
-        }
-
-
-        private void C_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".c";
-        }
-
-        private void H_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".h";
-        }
-
-        private void Cpp_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".cpp";
-        }
-
-        private void Hpp_Click(object sender, RoutedEventArgs e)
-        {
-            selectedExtension = ".hpp";
-        }
     }
 }

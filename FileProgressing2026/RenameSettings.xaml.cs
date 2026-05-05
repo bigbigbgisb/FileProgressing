@@ -45,7 +45,12 @@ namespace FileProgressing2026
             else
             {
                 MainWindow mainWindow = Application.Current.MainWindow as MainWindow;
-                if (mainWindow.SelectedDocumentShower.Children == null) { return; }
+                if (mainWindow.selectedFiles == null || mainWindow.selectedFiles.Count == 0)
+                {
+                    MessageBox.Show("请先添加文件至待处理区，请检查?", "警告");
+                    return;
+                }
+                
                 if (selecetdModel == "TN")
                 {
                     foreach (Border border in mainWindow.SelectedDocumentShower.Children)

@@ -20,10 +20,10 @@ namespace FileProgressing2026
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-
+    
     public partial class MainWindow : Window
     {
-
+        public List<string> selectedFiles = new();
         public MainWindow()
         {
             InitializeComponent();
@@ -40,11 +40,9 @@ namespace FileProgressing2026
         public void ProgrammersComment()
         {
             //Powered by C#
-            //Program by J
+            //Program by Pan Xuexin
             //print("hello,C#!")
-            void print(string text) { Console.WriteLine(text); }
-            print("What??Haha.In fact I set this method to public,so you have a small chance to see this,you are a good programmer bro👍");
-
+           
         }
 
 
@@ -78,6 +76,7 @@ namespace FileProgressing2026
                 stackPanel.Children.Add(new TextBlock() { Height = 50, Width = 130, Text = $"文件类型:{System.IO.Path.GetExtension((button.Tag as List<string>)[0])}", HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Bottom, Foreground = Document.Foreground, Margin = new Thickness(20, 0, 0, 20) }); ;
                 selectedElementBlock.Child = stackPanel;
                 SelectedDocumentShower.Children.Add(selectedElementBlock);
+                selectedFiles.Add(((button.Tag as List<string>)[0]) as string);
 
             }
             else
@@ -90,11 +89,12 @@ namespace FileProgressing2026
                     if ((element.Tag as List<string>)[0] as string == button.Content as string)
                     {
                         SelectedDocumentShower.Children.Remove(element);
+                        selectedFiles.Remove(((button.Tag as List<string>)[0]) as string);
                         break;
                     }
                     else
                     {
-                        //pass
+                        //pass??
                     }
                 }
 
@@ -129,46 +129,18 @@ namespace FileProgressing2026
 
         private void Help_Click(object sender, RoutedEventArgs e)
         {
-            Document_ChildWindow document_childWindow = new("help");
-            document_childWindow.Show();
-            document_childWindow.WindowStartupLocation = WindowStartupLocation.Manual;
-            document_childWindow.Owner = this;
-            Point buttonPos = Help.PointToScreen(new Point(0, 0));
-            document_childWindow.Left = buttonPos.X;
-            document_childWindow.Top = buttonPos.Y + Document.Height;
-            document_childWindow.Show();
-            document_childWindow.Focus();
+            //以后再写
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
-            Document_ChildWindow document_childWindow = new("settings");
-            document_childWindow.Show();
-            document_childWindow.WindowStartupLocation = WindowStartupLocation.Manual;
-            document_childWindow.Owner = this;
-            Point buttonPos = Settings.PointToScreen(new Point(0, 0));
-            document_childWindow.Left = buttonPos.X;
-            document_childWindow.Top = buttonPos.Y + Document.Height;
-            document_childWindow.Show();
-            document_childWindow.Focus();
+            //以后再写
         }
 
-        private void Edit_Click(object sender, RoutedEventArgs e)
-        {
-            Document_ChildWindow document_childWindow = new("edit");
-            document_childWindow.Show();
-            document_childWindow.WindowStartupLocation = WindowStartupLocation.Manual;
-            document_childWindow.Owner = this;
-            Point buttonPos = Edit.PointToScreen(new Point(0, 0));
-            document_childWindow.Left = buttonPos.X;
-            document_childWindow.Top = buttonPos.Y + Document.Height;
-            document_childWindow.Show();
-            document_childWindow.Focus();
-        }
 
         private void SelectAll_Click(object sender, RoutedEventArgs e)
         {
-            if ((sender as Button).Tag == "0")
+            if (SelectAll.Tag == "0")
             {
                 foreach (Button button in DocumentShower.Children)
                 {
@@ -182,7 +154,11 @@ namespace FileProgressing2026
                     stackPanel.Children.Add(new TextBlock() { Height = 50, Width = 130, Text = $"文件类型:{System.IO.Path.GetExtension((button.Tag as List<string>)[0])}", HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Bottom, Foreground = Document.Foreground, Margin = new Thickness(20, 0, 0, 20) }); ;
                     selectedElementBlock.Child = stackPanel;
                     SelectedDocumentShower.Children.Add(selectedElementBlock);
-                    (sender as Button).Tag = "1";
+                    (SelectAll).Tag = "1";
+                    selectedFiles.Add(((button.Tag as List<string>)[0]) as string);
+                    SelectAll.Background = Brushes.White;
+                    SelectAll.Content = "✔";
+                    
                 }
             }
             else
@@ -193,8 +169,11 @@ namespace FileProgressing2026
 
                     (button.Tag as List<string>)[1] = "0";
                     SelectedDocumentShower.Children.Clear();
-                    (sender as Button).Tag = "0";
+                    (SelectAll).Tag = "0";
+                    selectedFiles.Remove(((button.Tag as List<string>)[0]) as string);
                 }
+                SelectAll.Background = Bg.Background;
+                SelectAll.Content = "";
             }
 
         }
@@ -213,13 +192,17 @@ namespace FileProgressing2026
 
         private void Concat_Click(object sender, RoutedEventArgs e)
         {
-            SaveFileDialog saveFileDialog = new() { FileName=$"FileProgressing{DateTime.Now.ToString("yyyy-MM-dd-hh-mm-ss")}合并文本.txt",DefaultExt="txt",Filter="文本文件(*.txt) | *.txt"};
+            SaveFileDialog saveFileDialog = new() { FileName=$"FileProgressing{DateTime.Now.ToString("yyyy-MM-dd-hh-mm-ss")}合并文本.txt",DefaultExt="txt",Filter="文本文件(*.txt) | *.txt",Title="选择保存路径"};
             string savePath = "";
             if (saveFileDialog.ShowDialog() == true)
             {
                 savePath = saveFileDialog.FileName;
             }
-
+            if (savePath == "")
+            {
+                MessageBox.Show("请先选择保存路径!", "警告");
+                return;
+            }
             string contents = "";
             foreach (Border border in SelectedDocumentShower.Children)
             {

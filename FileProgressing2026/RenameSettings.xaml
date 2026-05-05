@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileProgressing2026"
         mc:Ignorable="d"
-        Title="File Progressing 2026 - 选择模板..." Height="450" Width="800"
+        Title="File Flow 2026 - 选择模板..." Height="450" Width="800"
         ResizeMode="NoResize"
         Background="#232425"
         

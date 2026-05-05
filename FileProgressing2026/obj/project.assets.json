@@ -341,24 +341,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ycfx\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\FileProgressing2026.csproj",
-      "projectName": "FileProgressing2026",
-      "projectPath": "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\FileProgressing2026.csproj",
-      "packagesPath": "C:\\Users\\ycfx\\.nuget\\packages\\",
-      "outputPath": "D:\\Csharp\\FileProgressing-main\\FileProgressing2026\\obj\\",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing\\FileProgressing2026\\FileProgressing2026.csproj",
+      "projectName": "FileFlow",
+      "projectPath": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing\\FileProgressing2026\\FileProgressing2026.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing\\FileProgressing2026\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ycfx\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -416,7 +411,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

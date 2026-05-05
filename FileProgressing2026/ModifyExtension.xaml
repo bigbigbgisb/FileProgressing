@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileProgressing2026"
         mc:Ignorable="d"
-        Title="File Progressing 2026 - 选择模板..." Height="450" Width="800"
+        Title="File Flow 2026 - 选择模板..." Height="450" Width="800"
         ResizeMode="NoResize"
         Background="#232425"
         
@@ -20,14 +20,14 @@
         <Border Background="#2D2D2D" Grid.Row="1" Margin="20,20,200,50" CornerRadius="10">
             <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10">
                 <StackPanel Orientation="Vertical">
-                    <Button x:Name="Md" Content=".当前后缀 => .md (Markdown格式)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Md_Click"></Button>
-                    <Button x:Name = "Txt" Content=".当前后缀 => .txt" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Txt_Click"></Button>
-                    <Button x:Name = "Cs" Content=".当前后缀 => .cs(C#)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Cs_Click"></Button>
-                    <Button x:Name = "Py" Content=".当前后缀 => .py(Python)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Py_Click"></Button>
-                    <Button x:Name = "C" Content=".当前后缀 => .c(C)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="C_Click"></Button>
-                    <Button x:Name = "H" Content=".当前后缀 => .h(C/C++ header)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="H_Click"></Button>
-                    <Button x:Name = "Cpp" Content=".当前后缀 => .cpp(C++)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Cpp_Click"></Button>
-                    <Button x:Name = "Hpp" Content=".当前后缀 => .hpp(C++ header)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Hpp_Click"></Button>
+                    <Button x:Name="Md" Content=".当前后缀 => .md (Markdown格式)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "Txt" Content=".当前后缀 => .txt" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "Cs" Content=".当前后缀 => .cs(C#)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "Py" Content=".当前后缀 => .py(Python)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "C" Content=".当前后缀 => .c(C)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "H" Content=".当前后缀 => .h(C/C++ header)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "Cpp" Content=".当前后缀 => .cpp(C++)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
+                    <Button x:Name = "Hpp" Content=".当前后缀 => .hpp(C++ header)" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Extenstion_Click"></Button>
                 </StackPanel>
             </ScrollViewer>
         </Border>

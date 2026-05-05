@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileProgressing2026"
         mc:Ignorable="d"
-        Title="File Progressing 2026" Height="700" Width="1200"
+        Title="File Flow 2026" Height="700" Width="1200"
         WindowStyle="None">
     <shell:WindowChrome.WindowChrome>
         <shell:WindowChrome CaptionHeight="0" CornerRadius="0" ResizeBorderThickness="5"></shell:WindowChrome>
@@ -35,7 +35,7 @@
                     <Image Source="/Document.png" Grid.Row="0" Width="30" Height="30" HorizontalAlignment="Left" Margin="15,10,0,0"></Image>
                     <TextBlock Text="文件资源管理器" Grid.Row="1" Foreground="White" FontSize="12" Margin="20,0,0,0"></TextBlock>
                     <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
-                        <Button x:Name="SelectAll" Height="20" Width="20" Background="#434343" Foreground="White" BorderThickness="0"  HorizontalAlignment="Left" Click="SelectAll_Click" Tag="0"></Button>
+                        <Button x:Name="SelectAll" Height="20" Width="20" Background="#434343" Foreground="Black" BorderThickness="0"  HorizontalAlignment="Left" Click="SelectAll_Click" Tag="0" Padding="0,0,0,3"></Button>
                         <TextBlock Text="全选" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
                     </StackPanel>
                     
@@ -58,7 +58,7 @@
             </StackPanel>
         </Border>
         <Border Grid.Column="2" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#434343">
-            <Border Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#232425" Margin="20,20,20,20" CornerRadius="10">
+            <Border Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#232425" Margin="20,20,20,20" CornerRadius="5">
                 <ScrollViewer Margin="5,5,5,70">
                     <WrapPanel x:Name="SelectedDocumentShower" Orientation="Horizontal" x:FieldModifier="public">
 
@@ -68,11 +68,11 @@
             </Border>
         </Border>
         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left">
-            <TextBlock Text="File Progressing 2026" Foreground="#FFFFFF" FontSize="15"  VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0" Width="180"></TextBlock>
-            <Button x:Name="Document" Content="文件" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center"  Width="60" Height="30" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Document_Click"/>
-            <Button x:Name="Help" Content="帮助" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center"  Width="60" Height="30" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Help_Click"/>
-            <Button x:Name="Settings" Content="设置" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center"  Width="60" Height="30" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Settings_Click"/>
-            <Button x:Name="Edit" Content="编辑" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center"  Width="60" Height="30" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Edit_Click"/>
+            <Image Source="/icon.png" VerticalAlignment="Center" HorizontalAlignment="Left" Width="40" Height="40" Margin="10,0,0,0"></Image>
+            <TextBlock Text="File Flow 2026" Foreground="#FFFFFF" FontSize="15"  VerticalAlignment="Center"  Margin="20,0,0,0" Width="120"></TextBlock>
+            <Button x:Name="Document" Content="文件" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center" HorizontalAlignment="Left"  Width="60" Height="30" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Document_Click"/>
+            <Button x:Name="Help" Content="帮助" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center"  Width="60" Height="30" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Help_Click"/>
+            <Button x:Name="Settings" Content="设置" Foreground="#FFFFFF" FontSize="10"  VerticalAlignment="Center"  Width="60" Height="30" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#232425" BorderThickness="0" Click="Settings_Click"/>
 
         </StackPanel>
         

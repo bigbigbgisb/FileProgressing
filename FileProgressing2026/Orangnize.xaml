@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileProgressing2026"
         mc:Ignorable="d"
-        Title="File Progressing 2026 - 整理文件" Height="450" Width="800"
+        Title="File Flow 2026 2026 - 整理文件" Height="450" Width="800"
         Background="#232425"
         >
     <Grid>
@@ -20,10 +20,14 @@
         <Border x:Name="Bg" Background="#2D2D2D" Grid.Row="1" Margin="20,20,200,50" CornerRadius="10">
             <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10">
                 <StackPanel Orientation="Vertical">
-                    <Button x:Name= "Image" Content="预设 : .png,.jpg,.jpeg,.webp归于\image" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Image_Click"></Button>
-                    <Button x:Name = "Document" Content="预设 : .docx,.doc,.txt归于\document" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Document_Click"></Button>
-                    <Button x:Name = "Code" Content="预设 : .py,.cs,.c,.cpp,.hpp,.h,.html,.js等归于\code" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Code_Click"></Button>
-                    <Button x:Name = "Zip" Content="预设 : .zip,.7z,.rar归于\zipped" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Zip_Click"></Button>
+                    <Button x:Name= "Image" Content="预设 : .png,.jpg,.jpeg,.webp归于\image" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    <Button x:Name = "Document" Content="预设 : .docx,.doc,.xlsx,.pdf,.txt归于\document" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    <Button x:Name = "Code" Content="预设 : .py,.cs,.c,.cpp,.hpp,.h,.html,.js等归于\code" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    <Button x:Name = "Zip" Content="预设 : .zip,.7z,.rar归于\zip" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    <Button x:Name = "Video" Content="预设 : .mp4,.mpg,.mov等归于\video" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    <Button x:Name = "Audio" Content="预设 : .mp3,.wav,.m4a等归于\audio" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    <Button x:Name = "Exe" Content="预设 : .exe,.msi,.bat等归于\exe" BorderThickness="0" Background="#434343" Foreground="White" Margin="10,5,10,10" Click="Rule_Click"></Button>
+                    
                 </StackPanel>
             </ScrollViewer>
         </Border>
