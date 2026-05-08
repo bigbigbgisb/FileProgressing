@@ -54,6 +54,7 @@
                 <Button x:Name="Orangnize" Content="🧹 " Foreground="White" FontSize="15" Padding="5,0,0,0" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="整理文件,自动/自定义分类为文件夹" Click="Orangnize_Click" Margin="0,10,0,0"></Button>
                 <TextBlock Text="文本文件" Foreground="White" FontSize="8" HorizontalAlignment="Center" Margin="0,10,0,0"></TextBlock>
                 <Button x:Name="Concat" Content="🔗" Foreground="White" FontSize="15" Padding="0,0,0,0" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="一键合并.txt文件(按照导入顺序)" Click="Concat_Click" Margin="0,10,0,0"></Button>
+                <Button x:Name="Replacewords" Content="🔁" Foreground="White" FontSize="15" Padding="0,0,0,0" Height="40" Width="40" BorderThickness="0" Background="#232425" ToolTip="一键替换文本中特定文本" Click="Replacewords_Click" Margin="0,10,0,0"></Button>
                 
             </StackPanel>
         </Border>

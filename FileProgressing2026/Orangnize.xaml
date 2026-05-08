@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="File Flow 2026 2026 - 整理文件" Height="450" Width="800"
         Background="#232425"
+        ResizeMode="NoResize"
         >
     <Grid>
         <Grid.RowDefinitions>

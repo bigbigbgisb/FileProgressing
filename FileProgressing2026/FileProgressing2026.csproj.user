@@ -14,7 +14,7 @@
     <Compile Update="RenameSettings.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Window1.xaml.cs">
+    <Compile Update="Replacewords.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

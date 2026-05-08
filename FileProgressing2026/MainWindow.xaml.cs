@@ -222,5 +222,11 @@ namespace FileProgressing2026
             Orangnize orangnize = new();
             orangnize.Show();
         }
+
+        private void Replacewords_Click(object sender, RoutedEventArgs e)
+        {
+            Replacewords replacewords = new();
+            replacewords.Show();
+        }
     }
 }

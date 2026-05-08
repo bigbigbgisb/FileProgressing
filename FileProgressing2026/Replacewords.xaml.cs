@@ -13,13 +13,28 @@ using System.Windows.Shapes;
 namespace FileProgressing2026
 {
     /// <summary>
-    /// Window1.xaml 的交互逻辑
+    /// Replacewords.xaml 的交互逻辑
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Replacewords : Window
     {
-        public Window1()
+        public Replacewords()
         {
             InitializeComponent();
+        }
+
+        private void Confirm_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void OriWord_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void AftWord_GotFocus(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

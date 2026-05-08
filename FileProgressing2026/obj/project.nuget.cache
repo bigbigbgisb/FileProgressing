@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "am1IkKVSOuc=",
+  "dgSpecHash": "fwrx8/EwDF0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\c#_document\\FileProgressing2026\\FileProgressing\\FileProgressing2026\\FileProgressing2026.csproj",
+  "projectFilePath": "D:\\Csharp\\FileProgressing\\FileProgressing2026\\FileProgressing2026.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\materialdesigncolors\\5.3.1\\materialdesigncolors.5.3.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\materialdesignthemes\\5.3.1\\materialdesignthemes.5.3.1.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
+    "C:\\Users\\ycfx\\.nuget\\packages\\materialdesigncolors\\5.3.1\\materialdesigncolors.5.3.1.nupkg.sha512",
+    "C:\\Users\\ycfx\\.nuget\\packages\\materialdesignthemes\\5.3.1\\materialdesignthemes.5.3.1.nupkg.sha512",
+    "C:\\Users\\ycfx\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512"
   ],
   "logs": []
 }

@@ -7,9 +7,10 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!-- Material Design 主题配置 -->
-                <materialDesign:BundledTheme BaseTheme="Dark" 
-                                              PrimaryColor="Red" 
-                                              SecondaryColor="Red" />
+                <materialDesign:BundledTheme 
+                    BaseTheme="Dark" 
+                    PrimaryColor="Blue"
+                    SecondaryColor="Blue"/>
 
                 <!-- Material Design 默认样式 -->
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />

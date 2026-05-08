@@ -1,0 +1,35 @@
+﻿<Window x:Class="FileProgressing2026.Replacewords"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileProgressing2026"
+        mc:Ignorable="d"
+        Title="File Flow 2026 2026 - 整理文件" Height="450" Width="800"
+        Background="#232425"
+        ResizeMode="NoResize"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Foreground="White" Grid.Row="0" Text="请输入要替换的文字与替换后的文字" FontSize="30" Margin="20,20,0,0" ></TextBlock>
+        <TextBlock Foreground="White" Grid.Row="0" Text="🔁" Grid.RowSpan="2" FontSize="100" HorizontalAlignment="Right" Margin="0,30,30,0" ></TextBlock>
+        <Border x:Name="LightBlack" Background="#434343" Width="0" Height="0" Visibility="Collapsed"></Border>
+        <Border x:Name="Bg" Background="#2D2D2D" Grid.Row="1" Margin="20,20,200,100" CornerRadius="10">
+            <StackPanel>
+                <Border Height="40" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="20,20,20,20" Background="#EBEBEB" CornerRadius="10">
+                    <TextBox x:Name="OriWord" Text="请输入正则表达式或纯文本的源文本" Margin="10,0,10,0" GotFocus="OriWord_GotFocus" BorderThickness="0"></TextBox>
+                </Border>
+                <TextBlock FontSize="30" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">⬇⬇</TextBlock>
+                <Border Height="40" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="20,0,20,20" Background="#EBEBEB" CornerRadius="10">
+                    <TextBox x:Name="AftWord" Text="请输入纯文本的转换后文本" Margin="10,0,10,0" GotFocus="AftWord_GotFocus" BorderBrush="#9ACEE8" BorderThickness="0"></TextBox>
+                </Border>
+            </StackPanel>
+            
+        </Border>
+        <Button x:Name="Confirm" Content="操作" BorderThickness="0" Background="#434343" Foreground="White" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="Confirm_Click" Width="80" Height="30" Margin="0,0,20,10"></Button>
+
+    </Grid>
+</Window>
