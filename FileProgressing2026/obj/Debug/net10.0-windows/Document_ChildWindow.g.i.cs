@@ -93,7 +93,7 @@ namespace FileProgressing2026 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FileFlow;component/document_childwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FileFlow;V1.0.0.0;component/document_childwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Document_ChildWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

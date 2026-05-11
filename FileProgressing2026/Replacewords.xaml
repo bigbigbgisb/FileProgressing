@@ -25,7 +25,13 @@
                 <TextBlock FontSize="30" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center">⬇⬇</TextBlock>
                 <Border Height="40" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="20,0,20,20" Background="#EBEBEB" CornerRadius="10">
                     <TextBox x:Name="AftWord" Text="请输入纯文本的转换后文本" Margin="10,0,10,0" GotFocus="AftWord_GotFocus" BorderBrush="#9ACEE8" BorderThickness="0"></TextBox>
+                    
                 </Border>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,20,0">
+                    <TextBlock Foreground="White" Text="启用正则模式"></TextBlock>
+                    <ToggleButton x:Name="IsAllowRegex" Background="White" Margin="10,0,0,0"/>
+                </StackPanel>
+                
             </StackPanel>
             
         </Border>

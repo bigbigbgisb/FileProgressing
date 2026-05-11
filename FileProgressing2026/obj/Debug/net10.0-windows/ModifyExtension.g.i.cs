@@ -125,7 +125,7 @@ namespace FileProgressing2026 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FileFlow;component/modifyextension.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FileFlow;V1.0.0.0;component/modifyextension.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ModifyExtension.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

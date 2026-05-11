@@ -147,3 +147,4 @@ D:\Csharp\FileProgressing\FileProgressing2026\obj\Debug\net10.0-windows\FileProg
 D:\Csharp\FileProgressing\FileProgressing2026\obj\Debug\net10.0-windows\ref\FileFlow.dll
 D:\Csharp\FileProgressing\FileProgressing2026\obj\Debug\net10.0-windows\Replacewords.g.cs
 D:\Csharp\FileProgressing\FileProgressing2026\obj\Debug\net10.0-windows\Replacewords.baml
+D:\Csharp\FileProgressing\FileProgressing2026\obj\Debug\net10.0-windows\FileProgressing2026.sourcelink.json

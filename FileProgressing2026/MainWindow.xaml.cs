@@ -204,17 +204,18 @@ namespace FileProgressing2026
                 return;
             }
             string contents = "";
+            string skipFile = "";
             foreach (Border border in SelectedDocumentShower.Children)
             {
 
                 var tag = border.Tag as List<string>;
                 var path = tag[1];
-                if (System.IO.Path.GetExtension(path) != ".txt") { return; }
+                if (System.IO.Path.GetExtension(path) != ".txt") { skipFile += (System.IO.Path.GetFileName(path) + " "); return; }
                 var content = File.ReadAllText(path);
                 contents += content;
             }
             File.WriteAllText(savePath, contents);
-            MessageBox.Show("操作成功", "提示");
+            MessageBox.Show($"操作成功 跳过文件{skipFile.Split(" ").Length - 1}个:\n{skipFile}\n共{SelectedDocumentShower.Children.Count}个", "提示");
         }
 
         private void Orangnize_Click(object sender, RoutedEventArgs e)
